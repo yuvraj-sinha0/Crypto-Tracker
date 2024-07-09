@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="coinName">Coin Name</h1>
+        <img id="coinImage" src="" alt="Coin Image">
+        <p id="coinDescription">Coin Description</p>
+        <p id="coinRank">Rank: <span id="rank"></span></p>
+        <p id="coinPrice">Current Price: $<span id="price"></span></p>
+        <p id="coinMarketCap">Market Cap: $<span id="marketCap"></span></p>
+        <select id="timeRange">
+            <option value="24h">24 Hours</option>
+            <option value="30d">30 Days</option>
+            <option value="3m">3 Months</option>
+        </select>
+        <canvas id="priceChart"></canvas>
+    </div>
+    <div id="loadingShimmer" class="shimmer"></div>
+    <script src="coins.js"></script>
+</body>
+</html>

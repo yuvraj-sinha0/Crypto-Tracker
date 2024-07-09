@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="logo.png" alt="Crypto Tracker Logo" class="logo">
+        </div>
+        <div class="navbar-center">
+            <input type="text" id="searchInput" placeholder="Search cryptocurrencies...">
+        </div>
+        <div class="navbar-right">
+            <a href="favorites.html" class="favorites-button">View Favorites</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Crypto Tracker</h1>
+        <input type="text" id="searchInput" placeholder="Search for a cryptocurrency...">
+        <div id="pagination"></div>
+        <table id="cryptoTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th><button id="sortPrice">Price (USD)</button></th>
+                    <th><button id="sortVolume">24h Volume (USD)</button></th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+        <div id="loadingShimmer" class="shimmer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
